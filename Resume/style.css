@@ -1,0 +1,110 @@
+body{
+    margin: 0px;
+}
+
+
+#body-header{
+    height: 65vh;
+    opacity: 0.8;
+    background-image: url(image/backgroundimg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.horizontal-list{
+    list-style: none;
+    padding:0;
+    margin: 0;
+}
+.horizontal-list li{
+    display: inline-block;
+    margin:8px 8px 8px 0px;
+}
+.horizontal-list li a{
+    font-size: 25px;
+    text-decoration:none;
+    color:ghostwhite;
+    transition:color 1s;
+}
+.horizontal-list li a:hover{
+    color:antiquewhite;
+    text-decoration:underline;
+}
+/*.horizontal-list li a img{
+    height:20px;
+    width:20px;
+    padding: 10px;
+}
+.horizontal-list li a img:hover{
+    box-shadow: 0px 0px 4px 6px rgba(230,196,196,0.3);
+    border-radius: 50%;
+    
+}*/
+.social-icons li a i{
+    padding: 10px;
+    color:white;
+    font-size: 1.5rem;
+    border-radius: 50%;
+}
+.social-icons li a i:hover{
+    box-shadow: 0px 0px 4px 6px rgba(230,196,196,0.3);}
+
+#Name{
+    font-size:70px;
+     color:ghostwhite;
+     margin-top: 120px;
+     margin-bottom: 0px;
+     font-weight: 700;
+}
+.text-centre{
+    text-align: center;
+}
+#about{
+    height:auto;
+    width:100%;
+    position: relative;
+}
+#My-image img{
+    height:100%;
+    width:100%;
+    border: 1px solid black;
+    border-radius: 50%;
+    box-shadow: 0px 0px 6px 4px lightgrey;
+}
+#My-image{
+    height:15rem;
+    width:15rem;
+    margin: auto;
+    margin-top: -18vh;
+}
+ #about p span{
+    color: #2857a4;
+}
+#about p{
+    margin:20px 200px;
+    text-align:justify;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+}
+#skills ul, #education p, #experience ul, #projects ul, #certificates ul, #achievements ul, #contact p, #linkresume{
+    margin:20px 200px;
+    text-align:justify;
+    font-size: 17px;
+    line-height: 25px;
+}
+.section-header h3{
+    margin:40px 200px 20px 200px;
+    text-decoration: underline;
+}
+#skills ul li{
+    display:inline-block;
+}
+#skills ul li:before{
+     content: '\2022\2007';
+}
+/*.section-header span{*/
+#education p span, #experience ul h4 span, #certificates ul li span{
+    text-align: right;
+}
+
