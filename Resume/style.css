@@ -87,24 +87,191 @@ body{
     font-size: 20px;
     line-height: 25px;
 }
-#skills ul, #education p, #experience ul, #projects ul, #certificates ul, #achievements ul, #contact p, #linkresume{
-    margin:20px 200px;
+#skills ul, #education p, #experience ul, #projects ul, #certificates ul, #achievements ul{
+    margin:0px 200px 20px;
     text-align:justify;
     font-size: 17px;
     line-height: 25px;
 }
-.section-header h3{
-    margin:40px 200px 20px 200px;
-    text-decoration: underline;
-}
-#skills ul li{
-    display:inline-block;
-}
-#skills ul li:before{
-     content: '\2022\2007';
-}
-/*.section-header span{*/
-#education p span, #experience ul h4 span, #certificates ul li span{
-    text-align: right;
+
+.section-heading {
+    width: auto;
+    padding: 20px 10px 10px;
+    font-weight: 400;
 }
 
+.section-heading span {
+    font-size: 40px;
+    color: #2857a4;
+    display: inline-block;
+    padding-top: 10px;
+    margin-right: 0.5rem;
+}
+section{
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.skills-container{
+    width: 80%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+section:nth-child(2n){
+    background-color: #e9f7df;
+}
+section:nth-child(2n+1){
+    background-color: white;
+}
+.skill-progress{
+    width:30%;
+    height:1.8rem;
+    border-radius: 0.8rem;
+    background-color: lightgrey;
+    margin: 2rem 4rem;
+}
+.skill-progress>div {
+  border-radius: 20px 0px 0px 20px;
+  box-shadow: 4px 0px 4px 0px grey;
+}
+.eighty-five-percent{
+    width:85%;
+    height:inherit;
+}
+.sixty-five-percent{
+    width:65%;
+    height:inherit;
+}
+.fifty-percent{
+    width:50%;
+    height:inherit;
+}
+.skill-name span{
+    margin-left: 10px;
+  color: white;
+  font-size: 1rem;
+  line-height: 1.8rem;
+}
+.mb-blue{background-color: #2857a4;}
+.mb-pink{background-color: hotpink;}
+.mb-orange{background-color: orange;}
+
+.portfolio-container{
+    width:85%;
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction:row;
+    justify-content:space-around;
+    margin-left: 50px;
+    
+}
+
+.portfolio-image img{
+    position: absolute;
+     width: 100%;
+    height: auto;
+}
+.portfolio-image{
+    height:300px;
+    width:30%;
+     margin: 0px 5px;
+    position: relative;
+    overflow:hidden;
+}
+.portfolio-image:hover {
+  box-shadow: 0px 0px 12px 0px #6db5fd;
+}
+  
+.portfolio-image:hover .image-des {
+  visibility: visible;
+    cursor: pointer;
+    opacity: 0.7;
+}
+.portfolio-image .image-des {
+background-color: lightgrey;
+  position: absolute;
+    top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 100%;
+  width: 100%;
+  opacity: 1.0;
+  transition: 0.5s ease;
+    visibility:hidden;
+}
+.portfolio-image .image-des p {
+     padding: 1.5rem;
+  font-size: 1.5rem;
+  color: white;
+}
+.mb-backgrad{
+    background-image: linear-gradient(mediumpurple, lightcyan, lightgreen 100%);
+    color: white;
+    font-size: 1rem;
+}
+.mbwhite span{
+    color: white;
+}
+.contact-container {
+  width: 90%;
+  min-width: 725px;
+  margin-bottom: 4rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  font-size: 1.25em;
+}
+
+.contact-container .contact-form-container, .contact-container .address-container {
+  flex-basis: 40%;
+  overflow-x: hidden;
+}
+
+.contact-container .contact-form-container .input-field {
+  width: 100%;
+  margin-bottom: 2rem;
+  padding-left: 1rem;
+  border: none;
+  height: 2.5rem;
+  font-size: 1em;
+  color: white;
+  border-bottom: 3px solid white;
+  background-color: #0000;
+}
+
+.contact-container .contact-form-container textarea.input-field {
+  height: 4rem;
+  resize: none;
+}
+
+.contact-container .contact-form-container .input-field:focus {
+  outline: none;
+  border-bottom: 3px solid #bebebe;
+}
+
+.contact-container .contact-form-container .input-field::placeholder {
+  color: #bebebe;
+}
+
+.contact-container .contact-form-container #submit {
+  display: block;
+  margin: 0 auto;
+  font-size: 0.75em;
+  padding: 0.5rem 1rem;
+}
+
+.contact-container .contact-form-container #submit:hover {
+  color: #1262b3;
+}
+
+.contact-container .address-container h2, .contact-container .address-container div {
+  margin: 0.8rem 0;
+}
+
+.contact-container .address-container div, .contact-container .address-container p {
+  font-size: 0.85em;
+}
