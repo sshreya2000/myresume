@@ -50,14 +50,20 @@ body{
     box-shadow: 0px 0px 4px 6px rgba(230,196,196,0.3);}
 
 #Name{
-    font-size:70px;
+    font-size:5em;
      color:ghostwhite;
-     margin-top: 120px;
+     margin-top: 18vh;
      margin-bottom: 0px;
      font-weight: 700;
 }
 .text-centre{
     text-align: center;
+}
+.mb75px{
+    color: #2857a4;;
+}
+.mb520{
+    color:orange;
 }
 #about{
     height:auto;
@@ -75,20 +81,20 @@ body{
     height:15rem;
     width:15rem;
     margin: auto;
-    margin-top: -18vh;
+    margin-top:-8rem;
 }
  #about p span{
     color: #2857a4;
 }
 #about p{
-    margin:20px 200px;
+    margin:20px 180px;
     text-align:justify;
     font-weight: 700;
     font-size: 20px;
     line-height: 25px;
 }
-#skills ul, #education p, #experience ul, #projects ul, #certificates ul, #achievements ul{
-    margin:0px 200px 20px;
+#skills ul, #projects ul, #certificates ul, #achievements ul{
+    margin:0px 180px 20px;
     text-align:justify;
     font-size: 17px;
     line-height: 25px;
@@ -159,6 +165,84 @@ section:nth-child(2n+1){
 .mb-pink{background-color: hotpink;}
 .mb-orange{background-color: orange;}
 
+/*Timeline*/
+
+.timeline {
+    position: relative;
+    width: 85%;
+/*    border: 2px solid black;*/
+
+}
+
+.timeline-box {
+    position: relative;
+    margin:5px;
+    width: 40%;
+    left: 5%;
+    min-height: 150px;
+/*    border: 2px solid black;*/
+}
+
+.timeline-box div{
+    text-align: justify;
+
+}
+.timeline-box h4{
+    font-size: 25px;
+    margin:0px;
+}
+.timeline-box p{
+    font-size: 15px;
+    margin:0px;
+}
+.timeline-box:nth-child(2n){
+      left: 53%;
+      text-align:left;
+}
+.timeline-box:nth-child(2n+1) {
+    text-align:right;
+}
+.timeline-box div p{
+    margin:5px;
+}
+.timeline-divider{
+    height: 75%;
+    width:0;
+    border: 2px dashed lightgrey;
+    position:absolute;
+    left:50%;
+    top:8%;
+    bottom: 8%;
+}
+.timeline-traveller{
+    font-size: 30px;
+    position:sticky;
+    top:8%;
+    transform:rotate(90deg);
+    z-index: 1;
+}
+.timeline-box:nth-child(2n+1)::after{
+    content:'';
+    border-radius: 50%;
+    width:1rem;
+    height: 1rem;
+    background-color: darkgrey;
+    position:absolute;
+    top:18%;
+    right:-13.7%;
+}
+.timeline-box:nth-child(2n)::after{
+    content:'';
+    border-radius: 50%;
+    width:1rem;
+    height: 1rem;
+    background-color: darkgrey;
+    position:absolute;
+    top:28%;
+    left:-9.5%;
+}
+
+
 .portfolio-container{
     width:85%;
     display:flex;
@@ -208,7 +292,7 @@ background-color: lightgrey;
   color: white;
 }
 .mb-backgrad{
-    background-image: linear-gradient(mediumpurple, lightcyan, lightgreen 100%);
+    background-image: linear-gradient(purple, blueviolet, lightgreen 100%);
     color: white;
     font-size: 1rem;
 }
