@@ -1,7 +1,70 @@
 body{
     margin: 0px;
 }
+.text-right{
+    text-align:right;
+}
+#dropdown{
+    width:0;
+    height:0;
+    overflow:hidden;
+    display:flex;
+    flex-wrap:wrap;
+}
+@media screen and (max-width:700px){
+    .xyzlist{
+        display:none;
+    }
+    #dropdown{
+        width:100%;
+        height:auto;
+        z-index:2;
+    }
+    .bars{
+        width:100%;
+        height:auto;
+        color:white;
+        position:fixed;
+        right:2%;
+        top:3%;
+    }
+    .bars i{
+        scale: 2;
+    }
+    #dropdown:hover .dropdown-menu{
+       visibility:visible;
+        width: 120px;
+        height: 200px;
+        top: 30px;
+        left: 75%;
+        background-color: lightgrey;
+        opacity:0.7;
+        box-shadow: 0px 0px 4px 6px black;
+        
+    }
+     
+    #dropdown .dropdown-menu{
+    position: fixed;
+    top:5;
+    left:0;
+    visibility:hidden;
+    }
+    #dropdown .dropdown-menu ul li a{ 
+        padding:5px;
+     color: black;}
 
+    #dropdown .dropdown-menu ul li a:hover{ 
+     color: grey;}
+
+    .vertical-list{
+    list-style: none;
+    padding:5px;
+    margin: 2px;
+    }
+    #about p, #skills ul, #certificates ul, #achievements ul{
+        margin:auto 80px;
+    }
+}
 
 #body-header{
     height: 65vh;
@@ -52,9 +115,24 @@ body{
 #Name{
     font-size:4em;
      color:ghostwhite;
-     margin-top: 1.5em;
+     margin-top: 2em;
      margin-bottom: 0;
      font-weight: 700;
+}
+@media screen and (max-height:700px){
+    #Name{
+        margin-top: 1.5em;
+    }
+}
+@media screen and (max-height:600px){
+    #Name{
+        margin-top: 0.5em;
+    }
+}
+@media screen and (max-height:500px){
+    #Name{
+        margin-top: 0em;
+    }
 }
 .text-centre{
     text-align: center;
@@ -93,7 +171,7 @@ body{
     font-size: 20px;
     line-height: 25px;
 }
-#skills ul, #projects ul, #certificates ul, #achievements ul{
+#skills ul, #certificates ul, #achievements ul{
     margin:0px 180px 20px;
     text-align:justify;
     font-size: 17px;
@@ -107,7 +185,7 @@ body{
 }
 
 .section-heading span {
-    font-size: 40px;
+    font-size: 1.5em;
     color: #2857a4;
     display: inline-block;
     padding-top: 10px;
@@ -133,7 +211,7 @@ section:nth-child(2n+1){
     background-color: white;
 }
 .skill-progress{
-    width:30%;
+    width:20%;
     height:1.8rem;
     border-radius: 0.8rem;
     background-color: lightgrey;
@@ -241,7 +319,22 @@ section:nth-child(2n+1){
     top:28%;
     left:-9.5%;
 }
-
+@media screen and (max-width:600px){
+    .timeline-divider{
+        left:1.1em;
+    }
+    .timeline-box{
+        width:85%;
+        left:2.5em !important;
+        text-align:left;
+    }
+    .timeline-box::after{
+        left:-2.1em !important;
+    }
+    html{
+        font-size: 15px;
+    }
+}
 
 .portfolio-container{
     width:85%;
@@ -250,20 +343,19 @@ section:nth-child(2n+1){
     flex-direction:row;
     justify-content:space-around;
     margin-left: 50px;
-    
 }
 
 .portfolio-image img{
     position: absolute;
      width: 100%;
-    height: auto;
+    height: 100%;
 }
 .portfolio-image{
     height:300px;
-    width:30%;
+    width:23em;
      margin: 0px 5px;
     position: relative;
-    overflow:hidden;
+    overflow: hidden;
 }
 .portfolio-image:hover {
   box-shadow: 0px 0px 12px 0px #6db5fd;
@@ -272,25 +364,24 @@ section:nth-child(2n+1){
 .portfolio-image:hover .image-des {
   visibility: visible;
     cursor: pointer;
+    background-color: lightgrey;
+    background-size: contain;
     opacity: 0.7;
 }
 .portfolio-image .image-des {
-background-color: lightgrey;
+    transition: all 0.5s ease-in-out;
   position: absolute;
-    top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  height: 100%;
-  width: 100%;
-  opacity: 1.0;
-  transition: 0.5s ease;
+  top:0;
+  left:0;
+  height: 15em;
+  width: 15em;
+  font-weight:700;
     visibility:hidden;
-}
-.portfolio-image .image-des p {
-     padding: 1.5rem;
+    padding: 1.5rem;
   font-size: 1.5rem;
   color: white;
 }
+
 .mb-backgrad{
     background-image: linear-gradient(purple, blueviolet, lightgreen 100%);
     color: white;
@@ -300,7 +391,7 @@ background-color: lightgrey;
     color: white;
 }
 .contact-container {
-  width: 90vw;
+  width: 100vw;
   min-width: 125px;
   margin-bottom: 4rem;
   display: flex;
@@ -311,7 +402,7 @@ background-color: lightgrey;
 }
 
 .contact-container .contact-form-container, .contact-container .address-container {
-  flex-basis: 40%;
+  flex-basis: 25em;
   overflow-x: hidden;
 }
 
@@ -349,7 +440,7 @@ background-color: lightgrey;
 }
 
 .contact-container .contact-form-container #submit:hover {
-  color: #1262b3;
+  background-color: #1262b3;
 }
 
 .contact-container .address-container h2, .contact-container .address-container div {
@@ -359,3 +450,4 @@ background-color: lightgrey;
 .contact-container .address-container div, .contact-container .address-container p {
   font-size: 0.85em;
 }
+    
