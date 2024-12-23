@@ -353,7 +353,7 @@ section:nth-child(2n+1){
   overflow-x: hidden;
 }
 
-.contact-container .contact-form-container .input-field {
+/* .contact-container .contact-form-container .input-field {
   width: 100em;
   margin-bottom: 2rem;
   padding-left: 1rem;
@@ -363,9 +363,9 @@ section:nth-child(2n+1){
   color: white;
   border-bottom: 3px solid white;
   background-color: #0000;
-}
+} */
 
-.contact-container .contact-form-container textarea.input-field {
+/* .contact-container .contact-form-container textarea.input-field {
   height: 4rem;
   resize: none;
 }
@@ -377,9 +377,9 @@ section:nth-child(2n+1){
 
 .contact-container .contact-form-container .input-field::placeholder {
   color: #bebebe;
-}
+} */
 
-.contact-container .contact-form-container #submit {
+/* .contact-container .contact-form-container #submit {
   display: block;
   margin: 0 auto;
   font-size: 0.75em;
@@ -388,6 +388,10 @@ section:nth-child(2n+1){
 
 .contact-container .contact-form-container #submit:hover {
   background-color: #1262b3;
+} */
+.white-transparent-link{
+    color:white;
+    text-decoration: none;
 }
 
 .contact-container .address-container h2, .contact-container .address-container div {
