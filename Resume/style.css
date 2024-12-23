@@ -1,5 +1,11 @@
 body{
-    margin: 0px;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #f0f0f0;
+    line-height: 1.6;
+    box-sizing: border-box;
 }
 .text-right{
     text-align:right;
@@ -30,25 +36,16 @@ body{
     margin:8px 8px 8px 0px;
 }
 .horizontal-list li a{
-    font-size: 25px;
+    font-size: 20px;
     text-decoration:none;
-    color:ghostwhite;
+    color:white;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     transition:color 1s;
 }
 .horizontal-list li a:hover{
-    color:antiquewhite;
+    color:white;
     text-decoration:underline;
 }
-/*.horizontal-list li a img{
-    height:20px;
-    width:20px;
-    padding: 10px;
-}
-.horizontal-list li a img:hover{
-    box-shadow: 0px 0px 4px 6px rgba(230,196,196,0.3);
-    border-radius: 50%;
-    
-}*/
 .social-icons li a i{
     padding: 10px;
     color:white;
@@ -82,7 +79,7 @@ body{
 #My-image img{
     height:100%;
     width:100%;
-    border: 1px solid black;
+    border: 1px solid white;
     border-radius: 50%;
     box-shadow: 0px 0px 6px 4px lightgrey;
 }
@@ -101,18 +98,24 @@ body{
     font-weight: 700;
     font-size: 20px;
     line-height: 25px;
+    color: white;
 }
 #skills ul, #certificates ul, #achievements ul{
     margin:0px 170px 20px;
     text-align:justify;
     font-size: 17px;
     line-height: 25px;
+    color:white;
 }
 
 .section-heading {
     width: auto;
     padding: 20px 10px 10px;
     font-weight: 400;
+}
+
+.section-header {
+    padding-bottom: 2%;
 }
 
 .section-heading span {
@@ -136,10 +139,10 @@ section{
   justify-content: space-around;
 }
 section:nth-child(2n){
-    background-color: #e9f7df;
+    background-color:black;
 }
 section:nth-child(2n+1){
-    background-color: white;
+    background-color: rgb(101, 97, 97);
 }
 .skill-progress{
     width:20%;
@@ -180,15 +183,16 @@ section:nth-child(2n+1){
     position: relative;
     width: 85%;
 /*    border: 2px solid black;*/
-
 }
 
 .timeline-box {
     position: relative;
-    margin:5px;
+    /* margin:5px; */
+    padding:5px;
     width: 40%;
     left: 5%;
     min-height: 150px;
+    color:white;
 /*    border: 2px solid black;*/
 }
 
@@ -205,7 +209,7 @@ section:nth-child(2n+1){
     margin:0px;
 }
 .timeline-box:nth-child(2n){
-      left: 53%;
+      left: 54%;
       text-align:left;
 }
 .timeline-box:nth-child(2n+1) {
@@ -215,13 +219,13 @@ section:nth-child(2n+1){
     margin:5px;
 }
 .timeline-divider{
-    height: 75%;
+    height: 85%;
     width:0;
     border: 2px dashed lightgrey;
     position:absolute;
     left:50%;
-    top:8%;
-    bottom: 8%;
+    top:2%;
+    bottom: 0%;
 }
 .timeline-traveller{
     font-size: 30px;
@@ -230,25 +234,25 @@ section:nth-child(2n+1){
     transform:rotate(90deg);
     z-index: 1;
 }
-.timeline-box:nth-child(2n+1)::after{
+.timeline-box:nth-child(2n+1)::before{
     content:'';
     border-radius: 50%;
     width:1rem;
     height: 1rem;
     background-color: darkgrey;
     position:absolute;
-    top:18%;
-    right:-13.7%;
+    top:10%;
+    right:-12.3%;
 }
-.timeline-box:nth-child(2n)::after{
+.timeline-box:nth-child(2n)::before{
     content:'';
     border-radius: 50%;
     width:1rem;
     height: 1rem;
     background-color: darkgrey;
     position:absolute;
-    top:28%;
-    left:-9.5%;
+    top:10%;
+    left:-11%;
 }
 @media screen and (max-width:600px){
     .timeline-divider{
@@ -314,7 +318,7 @@ section:nth-child(2n+1){
 }
 
 .mb-backgrad{
-    background-image: linear-gradient(purple, blueviolet, lightgreen 100%);
+    background-image: black;
     color: white;
     font-size: 1rem;
 }
